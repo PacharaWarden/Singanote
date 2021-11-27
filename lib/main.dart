@@ -31,53 +31,77 @@ class singa extends StatefulWidget {
 class _singaState extends State<singa> {
   List<NoteItem> items = [
     const NoteItem(
-        Imagenote: 'images/KeyG/C.jpg',
+        Imagenote: 'images/KeyG/Key_G.png',
+        key: ' ',
+        showimages: 'images/KeyG/Key_G.png'),
+    const NoteItem(
+        Imagenote: 'images/KeyG/G_3.jpg',
+        key: 'G3',
+        showimages: 'images/KeyG/G_3.jpg'),
+    const NoteItem(
+        Imagenote: 'images/KeyG/A_3.jpg',
+        key: ' ',
+        showimages: 'images/KeyG/A_3.jpg'),
+    const NoteItem(
+        Imagenote: 'images/KeyG/B_3.jpg',
+        key: ' ',
+        showimages: 'images/KeyG/B_3.jpg'),
+    const NoteItem(
+        Imagenote: 'images/KeyG/C_4.jpg',
         key: 'C4',
-        showimages: 'images/KeyG/C.jpg'),
+        showimages: 'images/KeyG/C_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/Cc.jpg',
+        Imagenote: 'images/KeyG/D_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/Cc.jpg'),
+        showimages: 'images/KeyG/D_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/D.jpg',
+        Imagenote: 'images/KeyG/E_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/D.jpg'),
+        showimages: 'images/KeyG/E_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/Eb.jpg',
+        Imagenote: 'images/KeyG/F_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/Eb.jpg'),
+        showimages: 'images/KeyG/F_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/E.jpg',
+        Imagenote: 'images/KeyG/G_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/E.jpg'),
+        showimages: 'images/KeyG/G_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/F.jpg',
+        Imagenote: 'images/KeyG/A_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/F.jpg'),
+        showimages: 'images/KeyG/A_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/Fc.jpg',
+        Imagenote: 'images/KeyG/B_4.jpg',
         key: ' ',
-        showimages: 'images/KeyG/Fc.jpg'),
+        showimages: 'images/KeyG/B_4.jpg'),
     const NoteItem(
-        Imagenote: 'images/KeyG/G.jpg',
+        Imagenote: 'images/KeyG/C_5.jpg',
+        key: 'C5',
+        showimages: 'images/KeyG/C_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/D_5.jpg',
         key: ' ',
-        showimages: 'images/KeyG/G.jpg'),
-    const NoteItem(
-        Imagenote: 'images/KeyG/Gc.jpg',
+        showimages: 'images/KeyG/D_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/E_5.jpg',
         key: ' ',
-        showimages: 'images/KeyG/Gc.jpg'),
-    const NoteItem(
-        Imagenote: 'images/KeyG/A.jpg',
+        showimages: 'images/KeyG/E_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/F_5.jpg',
         key: ' ',
-        showimages: 'images/KeyG/A.jpg'),
-    const NoteItem(
-        Imagenote: 'images/KeyG/Bb.jpg',
+        showimages: 'images/KeyG/F_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/G_5.jpg',
         key: ' ',
-        showimages: 'images/KeyG/Bb.jpg'),
-    const NoteItem(
-        Imagenote: 'images/KeyG/B.jpg',
+        showimages: 'images/KeyG/G_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/A_5.jpg',
         key: ' ',
-        showimages: 'images/KeyG/B.jpg'),
+        showimages: 'images/KeyG/A_5.jpg'),
+        const NoteItem(
+        Imagenote: 'images/KeyG/B_5.jpg',
+        key: ' ',
+        showimages: 'images/KeyG/B_5.jpg'),
   ];
 
   @override
@@ -98,7 +122,7 @@ class _singaState extends State<singa> {
                   height: 150,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
-                    itemCount: 12,
+                    itemCount: 18,
                     itemBuilder: (context, index) =>
                         buildNote(item: items[index]),
                   ),
