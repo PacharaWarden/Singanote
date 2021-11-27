@@ -1,166 +1,220 @@
 import 'package:flutter/material.dart';
 
-
 void main() {
-  runApp(const singa());
+  runApp(const Singa());
 }
 
 class NoteItem {
-  // ignore: non_constant_identifier_names
-  final String Imagenote;
+  final String imageNote;
   final String key;
-  final String showimages;
+  final String showImages;
 
-  const NoteItem(
-      {
-      // ignore: non_constant_identifier_names
-      required this.Imagenote,
-      required this.key,
-      required this.showimages});
+  const NoteItem({
+    required this.imageNote,
+    required this.key,
+    required this.showImages,
+  });
 }
 
-// ignore: camel_case_types
-class singa extends StatefulWidget {
-  const singa({Key? key}) : super(key: key);
+class Singa extends StatefulWidget {
+  const Singa({Key? key}) : super(key: key);
 
   @override
-  _singaState createState() => _singaState();
+  _SingaState createState() => _SingaState();
 }
 
-// ignore: camel_case_types
-class _singaState extends State<singa> {
+class _SingaState extends State<Singa> {
+  NoteItem? _selectedNoteItem; // Allow Null
   List<NoteItem> items = [
     const NoteItem(
-        Imagenote: 'images/KeyG/Key_G.png',
-        key: ' ',
-        showimages: 'images/KeyG/Key_G.png'),
+      imageNote: 'assets/images/key_g/Key_G.png',
+      key: ' ',
+      showImages: 'assets/images/key_g/Key_G.png',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/G_3.jpg',
-        key: 'G3',
-        showimages: 'images/KeyG/G_3.jpg'),
+      imageNote: 'assets/images/key_g/G_3.jpg',
+      key: 'G3',
+      showImages: 'assets/images/key_g/G_3.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/A_3.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/A_3.jpg'),
+      imageNote: 'assets/images/key_g/A_3.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/A_3.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/B_3.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/B_3.jpg'),
+      imageNote: 'assets/images/key_g/B_3.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/B_3.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/C_4.jpg',
-        key: 'C4',
-        showimages: 'images/KeyG/C_4.jpg'),
+      imageNote: 'assets/images/key_g/C_4.jpg',
+      key: 'C4',
+      showImages: 'assets/images/key_g/C_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/D_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/D_4.jpg'),
+      imageNote: 'assets/images/key_g/D_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/D_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/E_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/E_4.jpg'),
+      imageNote: 'assets/images/key_g/E_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/E_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/F_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/F_4.jpg'),
+      imageNote: 'assets/images/key_g/F_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/F_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/G_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/G_4.jpg'),
+      imageNote: 'assets/images/key_g/G_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/G_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/A_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/A_4.jpg'),
+      imageNote: 'assets/images/key_g/A_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/A_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/B_4.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/B_4.jpg'),
+      imageNote: 'assets/images/key_g/B_4.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/B_4.jpg',
+    ),
     const NoteItem(
-        Imagenote: 'images/KeyG/C_5.jpg',
-        key: 'C5',
-        showimages: 'images/KeyG/C_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/D_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/D_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/E_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/E_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/F_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/F_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/G_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/G_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/A_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/A_5.jpg'),
-        const NoteItem(
-        Imagenote: 'images/KeyG/B_5.jpg',
-        key: ' ',
-        showimages: 'images/KeyG/B_5.jpg'),
+      imageNote: 'assets/images/key_g/C_5.jpg',
+      key: 'C5',
+      showImages: 'assets/images/key_g/C_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/D_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/D_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/E_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/E_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/F_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/F_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/G_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/G_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/A_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/A_5.jpg',
+    ),
+    const NoteItem(
+      imageNote: 'assets/images/key_g/B_5.jpg',
+      key: ' ',
+      showImages: 'assets/images/key_g/B_5.jpg',
+    ),
   ];
+
+  @override
+  void initState() {
+    super.initState();
+    // getMicrophonePermssion
+  }
+
+  Widget buildNote({
+    required NoteItem item,
+  }) =>
+      Container(
+        width: 125,
+        color: Colors.orange,
+        child: Column(
+          children: [
+            Container(height: 4),
+            Text(
+              item.key,
+              style: const TextStyle(
+                fontSize: 18,
+              ),
+            ),
+            Expanded(
+              child: Material(
+                child: Ink.image(
+                  image: AssetImage(item.imageNote),
+                  fit: BoxFit.cover,
+                  child: InkWell(
+                    onTap: () async {
+                      setState(() {
+                        _selectedNoteItem = item;
+                      });
+                    },
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
+      );
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-          appBar: AppBar(
-            title: const Text(
-                'l       l      l      l      l     l      l      l      l      l      l'),
-            backgroundColor: Colors.brown[900],
+        appBar: AppBar(
+          title: Text(
+            _selectedNoteItem?.imageNote ?? '',
           ),
-          backgroundColor: Colors.grey[900],
-          body: Center(
-            child: Column(
-              verticalDirection: VerticalDirection.up,
-              children: [
-                SizedBox(
-                  height: 150,
-                  child: ListView.builder(
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 18,
-                    itemBuilder: (context, index) =>
-                        buildNote(item: items[index]),
-                  ),
-                )
-              ],
+          backgroundColor: Colors.brown[900],
+        ),
+        backgroundColor: Colors.grey[900],
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            const Spacer(),
+            SizedBox(
+              height: 200,
+              child: Center(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    _selectedNoteItem != null
+                        ? Image.asset(
+                            _selectedNoteItem!.showImages,
+                            height: 100,
+                          )
+                        : Container(),
+                    const VerticalDivider(
+                      color: Colors.white,
+                      thickness: 2,
+                      width: 20,
+                    ),
+                    _selectedNoteItem != null
+                        ? Text(
+                            _selectedNoteItem!.key.isEmpty
+                                ? '-'
+                                : _selectedNoteItem!.key,
+                          )
+                        : const Text('-')
+                  ],
+                ),
+              ),
             ),
-          )),
+            const Spacer(),
+            SizedBox(
+              height: 150,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: items.length,
+                itemBuilder: (context, index) => buildNote(
+                  item: items[index],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
-
-Widget buildNote({
-  required NoteItem item,
-}) =>
-    Container(
-      width: 125,
-      color: Colors.orange,
-      child: Column(
-        children: [
-          Container(height: 4),
-          Text(item.key, style: const TextStyle(fontSize: 18)),
-          Expanded(
-              child: Material(
-            child: Ink.image(
-              image: AssetImage(item.Imagenote),
-              fit: BoxFit.cover,
-              child: InkWell(
-                onTap: () {
-                  
-                  
-
-                  
-                
-                },
-              ),
-            ),
-          ))
-        ],
-      ),
-    );
-    
