@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-import 'package:audioplayers/audioplayers.dart';
-=======
->>>>>>> b0e66bba72a312e83f2013077cf59a1f4d4796fc
 
 void main() {
   runApp(const Singa());
@@ -10,7 +6,6 @@ void main() {
 
 class NoteItem {
   final String imageNote;
-<<<<<<< HEAD
   final String oc;
   final String showImages;
   final String keynote;
@@ -22,15 +17,6 @@ class NoteItem {
     required this.showImages,
     required this.keynote,
     required this.sounote,
-=======
-  final String key;
-  final String showImages;
-
-  const NoteItem({
-    required this.imageNote,
-    required this.key,
-    required this.showImages,
->>>>>>> b0e66bba72a312e83f2013077cf59a1f4d4796fc
   });
 }
 
@@ -46,7 +32,6 @@ class _SingaState extends State<Singa> {
   List<NoteItem> items = [
     const NoteItem(
       imageNote: 'assets/images/key_g/Key_G.png',
-<<<<<<< HEAD
       oc: ' ',
       showImages: 'assets/images/key_g/Key_G.png',
       keynote: ' ',
@@ -170,95 +155,6 @@ class _SingaState extends State<Singa> {
       showImages: 'assets/images/key_g/B_5.jpg',
       keynote: 'B',
       sounote: 'assets/sounds/b5.wav',
-=======
-      key: ' ',
-      showImages: 'assets/images/key_g/Key_G.png',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/G_3.jpg',
-      key: 'G3',
-      showImages: 'assets/images/key_g/G_3.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/A_3.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/A_3.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/B_3.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/B_3.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/C_4.jpg',
-      key: 'C4',
-      showImages: 'assets/images/key_g/C_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/D_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/D_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/E_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/E_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/F_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/F_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/G_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/G_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/A_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/A_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/B_4.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/B_4.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/C_5.jpg',
-      key: 'C5',
-      showImages: 'assets/images/key_g/C_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/D_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/D_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/E_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/E_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/F_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/F_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/G_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/G_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/A_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/A_5.jpg',
-    ),
-    const NoteItem(
-      imageNote: 'assets/images/key_g/B_5.jpg',
-      key: ' ',
-      showImages: 'assets/images/key_g/B_5.jpg',
->>>>>>> b0e66bba72a312e83f2013077cf59a1f4d4796fc
     ),
   ];
 
@@ -278,11 +174,7 @@ class _SingaState extends State<Singa> {
           children: [
             Container(height: 4),
             Text(
-<<<<<<< HEAD
               item.oc,
-=======
-              item.key,
->>>>>>> b0e66bba72a312e83f2013077cf59a1f4d4796fc
               style: const TextStyle(
                 fontSize: 18,
               ),
@@ -340,7 +232,6 @@ class _SingaState extends State<Singa> {
                     ),
                     _selectedNoteItem != null
                         ? Text(
-<<<<<<< HEAD
                             _selectedNoteItem!.keynote.isEmpty
                                 ? '-'
                                 : _selectedNoteItem!.keynote,
@@ -348,8 +239,7 @@ class _SingaState extends State<Singa> {
                                 color: Colors.grey[600], fontSize: 150),
                           )
                         : const Text('-'),
-                    _selectedNoteItem != null
-                        ? AudioCache(prefix: _selectedNoteItem!.sounote):
+                    
 
                     
                         
@@ -369,28 +259,6 @@ class _SingaState extends State<Singa> {
                 ),
               ),
             ),
-=======
-                            _selectedNoteItem!.key.isEmpty
-                                ? '-'
-                                : _selectedNoteItem!.key,
-                          )
-                        : const Text('-')
-                  ],
-                ),
-              ),
-            ),
-            const Spacer(),
-            SizedBox(
-              height: 150,
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: items.length,
-                itemBuilder: (context, index) => buildNote(
-                  item: items[index],
-                ),
-              ),
-            ),
->>>>>>> b0e66bba72a312e83f2013077cf59a1f4d4796fc
           ],
         ),
       ),
